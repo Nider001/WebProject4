@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <title>Hello World</title> 
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+ 
+  <body>
+    <div class="wrap">
+      <hr>
+      <div class="small1">
+        <div class="search">
+          <button type="button" class="searchButton" onclick="doSearch()">
+            <i class="fa fa-search"></i>
+          </button>
+          <input type="text" id="searchInput" class="searchInput" placeholder="Поиск">
+        </div>
+      </div>
+      <hr>
+      <div class="small2">
+        <table>
+
+          <!--
+          <tr>
+            <td>
+              <div class="el1">
+                <strong>123</strong>
+                <p>123</p>
+                <p>123</p>
+                <p>123</p>
+                <p>123</p>
+                <p>123</p>
+              </div>
+              <div class="el2">
+                <button type="button" class="removeButton">
+                  <i class="fa fa-trash"></i>
+                </button>
+              </div>
+            </td>
+          </tr>
+          -->
+          
+       </table>
+      </div>
+    </div>
+
+    <div class="modalAdd">
+      <div class="modal-content content1">
+        <textarea id="addArea1" class="addArea1" rows="2" placeholder="Введите заголовок"></textarea>
+      </div>
+      <div class="modal-content">
+        <textarea id="addArea2" class="addArea2" rows="5" placeholder="Текст заметки"></textarea>
+      </div>
+      <div class="modal-content content2">
+        <button class="modalButton" onclick="closeModalAdd()">Закрыть</button>
+        <button class="modalButton" onclick="confirmModalAdd()">Создать</button>
+      </div>
+    </div>
+
+    <div class="modalEdit">
+      <div class="modal-content content1">
+        <textarea id="editArea1" class="editArea1" rows="2" placeholder="Введите заголовок"></textarea>
+      </div>
+      <div class="modal-content">
+        <textarea id="editArea2" class="editArea2" rows="5" placeholder="Текст заметки"></textarea>
+      </div>
+      <div class="modal-content content2">
+        <button class="modalButton" onclick="closeModalEdit()">Закрыть</button>
+        <button class="modalButton" onclick="confirmModalEdit()">Сохранить</button>
+      </div>
+    </div>
+
+    <!-- <button class="addButton" onclick="generateTable()">+</button> -->
+    <button class="addButton" onclick="showModalAdd()">+</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="index.js"></script>
+  </body>
+</html>
